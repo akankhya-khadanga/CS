@@ -79,9 +79,13 @@ If you prefer more compact code, you can use the conditional ? operator. Unlike 
 ```
 ✅ Common Event Handlers in React:
 
-|Event type|React Attribute|
-|----------|---------------|
-|Click     |hi   |
+|Event type|React Attribute|Example|
+|----------|---------------|-------|
+|Click|onClick   |<button onClick={fn}>|
+|Change (inputs)|onChange|<input onChange={fn} />|
+|Submit|onSubmit|<form onSubmit={fn}>|
+|Mouse Over|onMouseOver|<div onMouseOver={fn}>|
+|Key Press|onKeyPress|<input onKeyPress={fn} />|
 
 Often, you’ll want your component to “remember” some information and display it. For example, maybe you want to count the number of times a button is clicked. To do this, add state to your component.
 
