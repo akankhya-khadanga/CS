@@ -1,4 +1,4 @@
-```python
+```react
 export default function MyApp() {
 
 return (
@@ -14,7 +14,7 @@ return (
 );
 
 }
-
+```
 Notice that <MyButton /> starts with a capital letter. That’s how you know it’s a React component. React component names must always start with a capital letter, while HTML tags must be lowercase.
 
 JSX is stricter than HTML. You have to close tags like <br />. Your component also can’t return multiple JSX tags. You have to wrap them into a shared parent, like a <div>...</div> or an empty <>...</> wrapper:
