@@ -79,8 +79,8 @@ If you prefer more compact code, you can use the conditional ? operator. Unlike 
 ```
 ✅ Common Event Handlers in React:
 
-|Event type|hello|
-|----------|-----|
+|Event type|React Attribute|
+|----------|---------------|
 |Click     |hi   |
 
 Often, you’ll want your component to “remember” some information and display it. For example, maybe you want to count the number of times a button is clicked. To do this, add state to your component.
