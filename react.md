@@ -28,15 +28,15 @@ In react u will write all the JS code with in curly braces
 JSX lets you put markup into JavaScript. Curly braces let you “escape back” into JavaScript so that you can embed some variable from your code and display it to the user. For example, this will display user.name:
 
 
-return (
+```return (
   <h1>
     {user.name}
   </h1>
 )
-
+```
 Responding to events
 
-function MyButton() {
+```function MyButton() {
   function handleClick() {
     alert('You clicked me!');
   }
@@ -47,14 +47,14 @@ function MyButton() {
     </button>
   );
 }
-
+```
 Notice how onClick={handleClick} has no parentheses at the end! Do not call the event handler function: you only need to pass it down. React will call your event handler when the user clicks the button
 
 Conditional rendering
 
 In React, there is no special syntax for writing conditions. Instead, you’ll use the same techniques as you use when writing regular JavaScript code. For example, you can use an if statement to conditionally include JSX:
 
-let content;
+```let content;
 if (isLoggedIn) {
   content = <AdminPanel />;
 } else {
@@ -65,10 +65,10 @@ return (
     {content}
   </div>
 );
-
+```
 If you prefer more compact code, you can use the conditional ? operator. Unlike if, it works inside JSX:
 
-
+```
 <div>
   {isLoggedIn ? (
     <AdminPanel />
@@ -76,7 +76,7 @@ If you prefer more compact code, you can use the conditional ? operator. Unlike 
     <LoginForm />
   )}
 </div>
-
+```
 ✅ Common Event Handlers in React:
 
 Event Type
