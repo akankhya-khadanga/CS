@@ -79,8 +79,8 @@ If you prefer more compact code, you can use the conditional ? operator. Unlike 
 ```
 ✅ Common Event Handlers in React:
 
-|Event type|React Attribute|Example|
-|:----------|:---------------:|-------:|
+|Event type|React Attribute|Example                  |
+|:----------|:---------------:|----------------------:|
 |Click|onClick             |<button onClick={fn}>|
 |Change (inputs)|onChange  |<input onChange={fn} />|
 |Submit|onSubmit           |<form onSubmit={fn}>|
