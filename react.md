@@ -1,4 +1,4 @@
-```react
+![admin](https://github.com/user-attachments/assets/2072cfe1-f235-40e5-99ae-186846d89450)```react
 export default function MyApp() {
 
 return (
@@ -121,3 +121,63 @@ Border radius (rounded corners)
 shadow
 
 Adds box shadow
+
+
+#React Developer Tools 
+React DevTools let you check the props and the state of your React components. You can find the React DevTools tab at the bottom of the browser section in CodeSandbox:
+``Every module can have two different types of export, named export and default export. You can have multiple named exports per module but only one default export.``
+
+```
+// export features declared elsewhere
+export { myFunction2, myVariable2 };
+
+// export individual features (can export var, let,
+// const, function, class)
+export let myVariable = Math.sqrt(2);
+export function myFunction() {
+  // …
+}
+```
+After the export keyword, you can use let, const, and var declarations, as well as function or class declarations. You can also use the export { name1, name2 } syntax to export a list of names declared elsewhere. Note that export {} does not export an empty object — it's a no-op declaration that exports nothing (an empty name list).
+
+
+Named exports are useful when you need to export several values. When importing this module, named exports must be referred to by the exact same name (optionally renaming it with as), but the default export can be imported with any name. For example:
+```
+const k = 12;
+export default k;
+```
+You can also rename named exports to avoid naming conflicts:
+```
+export { myFunction as function1, myVariable as variable };
+```
+There is also export * from "mod", although there's no import * from "mod". This re-exports all named exports from mod as the named exports of the current module, but the default export of mod is not re-exported. If there are two wildcard exports statements that implicitly re-export the same name, neither one is re-exported.
+JSX is stricter than HTML. You have to close tags like <br />.
+You have to wrap them into a shared parent, like a <div>...</div> or an empty <>...</> wrapper:
+```
+function AboutPage() {
+  return (
+    <>
+      <h1>About</h1>
+      <p>Hello there.<br />How do you do?</p>
+    </>
+  );
+}
+```
+#Responding to events 
+You can respond to events by declaring event handler functions inside your components:
+```
+function MyButton() {
+  function handleClick() {
+    alert('You clicked me!');
+  }
+
+  return (
+    <button onClick={handleClick}>
+      Click me
+    </button>
+  );
+}
+```
+Notice how onClick={handleClick} has no parentheses at the end! Do not call the event handler function: you only need to pass it down. React will call your event handler when the user clicks the button.
+
+
