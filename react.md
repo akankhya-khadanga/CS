@@ -1,4 +1,4 @@
-![admin](https://github.com/user-attachments/assets/2072cfe1-f235-40e5-99ae-186846d89450)```react
+```react
 export default function MyApp() {
 
 return (
